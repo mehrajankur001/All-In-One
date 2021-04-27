@@ -1,0 +1,42 @@
+.productStatus {
+  width: 600px;
+  height: 400px;
+  background-color: teal;
+  margin: auto;
+  padding: auto;
+}
+#productReceived {
+  width: 200px;
+  height: 50px;
+  background-color: green;
+  margin: auto;
+  padding: auto;
+}
+
+#picked {
+  width: 200px;
+  height: 50px;
+  background-color: green;
+  margin: auto;
+  padding: auto;
+}
+
+#outForDelevery {
+  width: 200px;
+  height: 50px;
+  background-color: green;
+  margin: auto;
+  padding: auto;
+}
+
+#delevired {
+  width: 200px;
+  height: 50px;
+  background-color: green;
+  margin: auto;
+  padding: auto;
+}
+
+.show {
+  color: aqua;
+}

@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="/css/home.css">
+
+<form action="/" method="get">
+    <input type="text" name="unId" value=<%= searchOptions.unId %> >
+    <button type="submit">track</button>
+</form>
+<% var a; %> 
+<h4><%= searchOptions.unId %> </h4>
+<% products.forEach(product => { %> 
+        <% if(searchOptions.unId === product.unId && searchOptions.unId != null) { %> 
+            <h2>       
+                 <%= product.currentStatus %> 
+            </h2>
+            <% a = product.currentStatus %> 
+            <% console.log(a) %> 
+
+        <% } else { %>
+        <% } %> 
+<% }); %>
+
+
+<div class="productStatus">
+    <div id="productReceived">
+        <h3>Product Received</h3>
+    </div>
+    <div id="picked">
+        <h3>Product picked</h3>
+    </div>
+    <div id="outForDelevery">
+        <h3>Out for delevery</h3>
+    </div>
+    <div id="delevired">
+        <h3>delevired</h3>
+    </div>
+</div>
+
+<script src="/js/home.js"></script>

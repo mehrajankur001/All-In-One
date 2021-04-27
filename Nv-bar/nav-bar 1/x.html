@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav-bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Acme|Alegreya|Alegreya+Sans|Anton|Archivo|Archivo+Black|Archivo+Narrow|Arimo|Arvo|Asap|Asap+Condensed|Bitter|Bowlby+One+SC|Bree+Serif|Cabin|Cairo|Catamaran|Crete+Round|Crimson+Text|Cuprum|Dancing+Script|Dosis|Droid+Sans|Droid+Serif|EB+Garamond|Exo|Exo+2|Faustina|Fira+Sans|Fjalla+One|Francois+One|Gloria+Hallelujah|Hind|Inconsolata|Indie+Flower|Josefin+Sans|Julee|Karla|Lato|Libre+Baskerville|Libre+Franklin|Lobster|Lora|Mada|Manuale|Maven+Pro|Merriweather|Merriweather+Sans|Montserrat|Montserrat+Subrayada|Mukta+Vaani|Muli|Noto+Sans|Noto+Serif|Nunito|Open+Sans|Open+Sans+Condensed:300|Oswald|Oxygen|PT+Sans|PT+Sans+Caption|PT+Sans+Narrow|PT+Serif|Pacifico|Passion+One|Pathway+Gothic+One|Play|Playfair+Display|Poppins|Questrial|Quicksand|Raleway|Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab|Ropa+Sans|Rubik|Saira|Saira+Condensed|Saira+Extra+Condensed|Saira+Semi+Condensed|Sedgwick+Ave|Sedgwick+Ave+Display|Shadows+Into+Light|Signika|Slabo+27px|Source+Code+Pro|Source+Sans+Pro|Spectral|Titillium+Web|Ubuntu|Ubuntu+Condensed|Varela+Round|Vollkorn|Work+Sans|Yanone+Kaffeesatz|Zilla+Slab|Zilla+Slab+Highlight" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/y.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="content">
+            <div class="logo">
+                <a class="logo-text" href="/">Book Web App</a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-button">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="/authors">Authors</a></li>
+                <li><a href="/authors.new">Add Authors</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="/books/new">Add Book</a></li>
+            </ul>
+            <div class="icon menu-button">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+  <div class="banner"></div>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".nav-bar");
+    const menuBtn = document.querySelector(".menu-button");
+    const cancelBtn = document.querySelector(".cancel-button");
+    const menuList = document.querySelectorAll(".menu-list");
+
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("phoneMode");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("phoneMode");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+
+  </script>
+
+</body>
+</html>

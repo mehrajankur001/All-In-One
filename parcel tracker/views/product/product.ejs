@@ -1,0 +1,37 @@
+<style>
+    .product{
+        width: 600px;
+        height: 600px;
+        border: 2px solid teal;
+        background-color: #28b5b5;
+        display: flex;
+        flex-direction: column;
+        color: black;
+        padding: 20px 25px;
+    }
+</style>
+
+<% products.forEach(product => { %> 
+    <div class="product">
+        <h4> Database Id <%= product.id %> </h4>
+        <h4> Product creation Date: <%= product.createdAt %> </h4>
+        <h4> Current Status: <%= product.currentStatus %> </h4>
+        <h4> Sender Name: <%= product.senderName %> </h4>
+        <h4> Sender Address: <%= product.senderAddress %> </h4>
+        <h4> Sender Number: <%= product.senderNumber %> </h4>
+        <h4> Receiver Name: <%= product.receiverName %> </h4>
+        <h4> Receiver Address: <%= product.receiverAddress %> </h4>
+        <h4> Receiver Number: <%= product.receiverNumber %> </h4>
+        <h4> Tracking Id: <%= product.unId %> </h4>
+    </div>
+
+    <button><a href="/product/<%= product.id %>/edit">EDIT</a></button>
+    <%- include('../partials/delete', {url: `/product/${product.id}`}) %> 
+
+<% }); %> 
+<script>
+    const prdct= document.querySelectorAll('.product')
+    prdct.scrollIntoView({
+    behavior:'smooth' 
+});
+</script>

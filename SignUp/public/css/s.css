@@ -1,0 +1,8 @@
+body {
+  background-color: orange;
+  opacity: 10;
+  color: black;
+}
+button{
+  float: left;
+}

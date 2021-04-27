@@ -1,0 +1,16 @@
+<form action="/product" method="post">
+    <label for="">Sender's Name</label>
+    <input type="text" name="senderName" id="" value=<%= product.senderName %> >
+    <label for="">Sender's Phone Number</label>
+    <input type="number" name="senderNumber" id="" value=<%= product.senderNumber %> >
+    <label for="">Sender's Phone Number</label>
+    <textarea name="senderAddress"  id="" value=<%= product.senderAddress %> >Write Here</textarea>
+    <label for="">Receiver's Name</label>
+    <input type="text" name="receiverName" id="" value=<%= product.receiverName %> >
+    <label for="">Receiver's Phone Number</label>
+    <input type="number" name="receiverNumber" id="" value=<%= product.receiverNumber %> >
+    <label for="">Receiver's Phone Number</label>
+    <textarea name="receiverAddress"  id="" value=<%= product.receiverAddress %> >Write Here</textarea>
+    <button type="submit">Add</button>
+    <button type="submit"><a href="/product">cancel</a></button>
+</form>
